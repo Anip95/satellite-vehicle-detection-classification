@@ -1,0 +1,17 @@
+train: J:/xView/train/images
+val: J:/xView/val/images
+
+
+nc: 3
+
+names: ["Airplane", "Ship", "Vehicle"]
+
+
+weights: [4.0, 4.0, 1.0]
+
+
+
+
+
+
+
