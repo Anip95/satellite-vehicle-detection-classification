@@ -27,7 +27,7 @@ It contains three object classes:
 
 ## Important note about the code
 
-The code in the file *satelliteImgClassifiction.ipynb* is almost entirely in English, with the only exception of the various *print(...)* which are in Italian (my native language). This decision was by design, in order to preserve the cache of the outputs of each block.
+The code in the file *satelliteImgClassifiction.ipynb* is almost entirely in English, with the only exception of the several *print(...)* which were left in Italian (my native language). This decision was made in order to preserve the cache of the outputs of each block.
 
 ## Project Overview
 
