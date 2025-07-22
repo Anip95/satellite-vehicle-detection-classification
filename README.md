@@ -1,5 +1,9 @@
 # Terrestrial Vehicle Detection and Classification in Satellite Images
 
+![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)
+![YOLOv11](https://img.shields.io/badge/YOLOv11-Model-red)
+
+
 This project was developed for the *Cognitive Computing Systems* course as part of my academic work as a master's degree student in Computer Engineering.
 
 The work focuses on using a YOLOv11-based model to detect and classify terrestrial vehicles from high-resolution satellite images.
@@ -93,14 +97,14 @@ The YOLOv11s based model performed well, thanks to the data augmentation applied
 
 Despite the good results, YOLO is flawed when it comes to detecting very small objects. 
 This problem is due to how:
-  - It divides the image in a grid, that could assign small objects to much bigger cells;
-  - It performs a downsampling during the features extraction, that can lead to losing some critical details.
+  - The grid-based prediction mechanism, which may assign small objects to disproportionately large cells;
+  - Downsampling operations during feature extraction, which may cause the loss of important fine-grained details.
 
 ### Possible future developments
 
-  - Usage of YOLOv11l or YOLOv11x that are much bigger models with better capabilities, although requiring much more ample computing power;
-  - Application of the model to a bigger dataset to improve generalization;
-  - Exploration more optimization and fine tuning techniques;
-  - Usage of the model in real time application, such as scaling it to be used on edge devices mounted on UAVs.
+  - Use larger models such as YOLOv11l or YOLOv11x for improved detection performance (with higher computational requirements);
+  - Expand the dataset for better generalization;
+  - Explore more advanced optimization and fine-tuning strategies;
+  - Deploy the model in real-time applications (e.g., UAV-mounted edge devices).
 
 
