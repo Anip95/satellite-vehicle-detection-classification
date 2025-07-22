@@ -24,6 +24,11 @@ It contains three object classes:
   - Start the project through Jupyter Lab.
   - For a matter of size, the folders train22 and predict have been omitted. They will be created by running the code (train22 from the training block and predict from the inference block).
 
+
+## Important note about the code
+
+The code in the file *satelliteImgClassifiction.ipynb* is almost entirely in English, with the only exception of the various *print(...)* which are in Italian (my native language). This decision was by design, in order to preserve the cache of the outputs of each block.
+
 ## Project Overview
 
 
