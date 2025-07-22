@@ -24,3 +24,7 @@ It contains three object classes:
   - Start the project through Jupyter Lab.
   - For a matter of size, the folders train22 and predict have been omitted. They will be created by running the code (train22 from the training block and predict from the inference block).
 
+# Project Overview
+
+Firstly, all the class instances were counted, and by the result of the counting, a decision was made to oversample the classes 0 and 1.
+
