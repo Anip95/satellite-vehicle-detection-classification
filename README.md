@@ -43,7 +43,7 @@ The oversampling was done by duplicating the images (and respective labels) that
 
 ![](assets/1classcount.png)
 
-The following image show the number of images that only present the classes 0 and 1, before the oversampling.
+The following image shows the number of images that only present the classes 0 and 1, before the oversampling.
 
 ![](assets/2numimg0and1.png)
 
