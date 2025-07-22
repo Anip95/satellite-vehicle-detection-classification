@@ -28,6 +28,11 @@ It contains three object classes:
 
 Firstly, all the class instances were counted, and by the result of the counting, a decision was made to oversample the classes 0 and 1.
 
-![Class count](assets/1classcount.png)
+!(assets/1classcount.png)
 
-![Class count](assets/2numimg0and1.png)
+The following image show the number of images that only present the classes 0 and 1.
+!(assets/2numimg0and1.png)
+
+Then, an 80-10-10 split in training, validation and test set was done:
+
+!(assets/3trainvaltestsplit.png)
