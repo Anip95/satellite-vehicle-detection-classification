@@ -26,6 +26,7 @@ It contains three object classes:
 
 # Project Overview
 
+
 ## Loading and analyzing the images
 Firstly, all the class instances were counted, and by the result of the counting, a decision was made to oversample the classes 0 and 1.
 
@@ -34,21 +35,35 @@ The oversampling was done by duplicating the images (and respective labels) that
 ![](assets/1classcount.png)
 
 The following image show the number of images that only present the classes 0 and 1, before the oversampling.
+
 ![](assets/2numimg0and1.png)
 
 Then, an 80-10-10 split in training, validation and test set was done:
 
 ![](assets/3trainvaltestsplit.png)
 
-## Preprocessing
-Two techniques were applied, *only* to the images present in the training and validation sets:
 
-  - *CLAHE*
-  - *Gamma Correction*
+## Preprocessing
+Two techniques were applied, **only** to the images present in the training and validation sets:
+
+  - **CLAHE**
+  - **Gamma Correction**
 
 The results of those are shown as follows:
 
 ![](assets/4imgpreandafterprocessing.png)
+
+
+## Implementing the model
+
+As said before, the model chosen for this project was **YOLOv11**, the small version. The parameters in the image are the final ones, obtained through fine tuning and testing.
+
+![](assets/5model.png)
+
+YOLO requires a **.yaml** file to run:
+
+![](assets/6data.png)
+
 
 
 
