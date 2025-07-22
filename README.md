@@ -47,9 +47,11 @@ Then, an 80-10-10 split in training, validation and test set was done:
 
 ![](assets/3trainvaltestsplit.png)
 
+### Preprocessing
+
 > *Note about the images*: The images in the dataset were already resized to have a resolution of **640x640**, a value desired by YOLO models, and they were already presenting geometric transformations such rotations and zooming.
 
-### Preprocessing
+
 Two techniques were applied, **only** to the images present in the training and validation sets:
 
   - **CLAHE**
