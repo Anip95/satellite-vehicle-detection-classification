@@ -60,10 +60,17 @@ As said before, the model chosen for this project was **YOLOv11**, the small ver
 
 ![](assets/5model.png)
 
-YOLO requires a **.yaml** file to run:
+YOLO requires a **.yaml** file to run. The weights added to the 0 and 1 classes are to take into account the class imbalance.
 
 ![](assets/6data.png)
 
+After running for 100 epochs, the model achieved a **Precision of 0.871**, a **Recall of 0.851** and **mAP50 of 0.881**.
+
+![](assets/7results.png) ![](assets/8metricsintime.png)
+
+The loss curvers were deemed acceptable:
+
+![](assets/9trainvalloss.png)
 
 
 
