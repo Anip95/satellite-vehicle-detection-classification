@@ -28,3 +28,6 @@ It contains three object classes:
 
 Firstly, all the class instances were counted, and by the result of the counting, a decision was made to oversample the classes 0 and 1.
 
+![Class count](assets/1classcount.png)
+
+![Class count](assets/2numimg0and1.png)
