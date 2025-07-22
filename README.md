@@ -108,3 +108,13 @@ This problem is due to how:
   - Deploy the model in real-time applications (e.g., UAV-mounted edge devices).
 
 
+
+
+---
+
+# Contact
+
+A powerpoint presentation of the project is available in Italian. It can be shared on demand.
+For more information or collaboration, feel free to contact me at:  
+**dape1995@gmail.com**
+
