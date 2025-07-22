@@ -7,7 +7,11 @@ The work focuses on using a YOLOv11-based model to detect and classify terrestri
 The code was developed and tested on Jupyter Lab.
 
 # The dataset
-The dataset contains 1920 satellite images that were taken from the much bigger dataset called xView. The classes in this dataset are Vehicle, Ship and Airplane.
+The dataset consists of **1,920 satellite images**, extracted from the larger **xView** dataset.  
+It contains three object classes:
+- `Vehicle`
+- `Ship`
+- `Airplane`
 
 # Step by step guide to run the project on any machine
 
