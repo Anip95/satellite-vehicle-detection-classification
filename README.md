@@ -68,9 +68,19 @@ After running for 100 epochs, the model achieved a **Precision of 0.871**, a **R
 
 ![](assets/7results.png) ![](assets/8metricsintime.png)
 
-The loss curvers were deemed acceptable:
+The loss curves were deemed acceptable and it can be seen that, apart for an initial spike due to the model just starting to fit to the images, they follow the desired downward trend:
 
 ![](assets/9trainvalloss.png)
+
+## Model inference
+
+The inference of the model was performed against the images in the test set. At its completion, a folder **predict** got created, and inside are the images with bounding boxes and values of confidence:
+
+![](assets/10imgBB.png)
+
+
+# Final considerations
+
 
 
 
