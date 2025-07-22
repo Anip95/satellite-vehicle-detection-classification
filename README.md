@@ -31,8 +31,10 @@ Firstly, all the class instances were counted, and by the result of the counting
 ![](assets/1classcount.png)
 
 The following image show the number of images that only present the classes 0 and 1.
-!(assets/2numimg0and1.png)
+![](assets/2numimg0and1.png)
 
 Then, an 80-10-10 split in training, validation and test set was done:
 
-!(assets/3trainvaltestsplit.png)
+![](assets/3trainvaltestsplit.png)
+
+
