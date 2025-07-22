@@ -24,10 +24,10 @@ It contains three object classes:
   - Start the project through Jupyter Lab.
   - For a matter of size, the folders train22 and predict have been omitted. They will be created by running the code (train22 from the training block and predict from the inference block).
 
-# Project Overview
+## Project Overview
 
 
-## Loading and analyzing the images
+### Loading and analyzing the images
 Firstly, all the class instances were counted, and by the result of the counting, a decision was made to oversample the classes 0 and 1.
 
 The oversampling was done by duplicating the images (and respective labels) that only presented the classes 0 and/or 1.
@@ -42,8 +42,9 @@ Then, an 80-10-10 split in training, validation and test set was done:
 
 ![](assets/3trainvaltestsplit.png)
 
+> *Note about the images*: The images in the dataset were already resized to have a resolution of **640x640**, a value desired by YOLO models, and they were already presenting geometric transformations such rotations and zooming.
 
-## Preprocessing
+### Preprocessing
 Two techniques were applied, **only** to the images present in the training and validation sets:
 
   - **CLAHE**
@@ -54,7 +55,7 @@ The results of those are shown as follows:
 ![](assets/4imgpreandafterprocessing.png)
 
 
-## Implementing the model
+### Implementing the model
 
 As said before, the model chosen for this project was **YOLOv11**, the small version. The parameters in the image are the final ones, obtained through fine tuning and testing.
 
@@ -64,7 +65,7 @@ YOLO requires a **.yaml** file to run. The weights added to the 0 and 1 classes 
 
 ![](assets/6data.png)
 
-After running for 100 epochs, the model achieved a **Precision of 0.871**, a **Recall of 0.851** and **mAP50 of 0.881**.
+After running for 100 epochs, the model achieved a **Precision of 0.871**, a **Recall of 0.851**, a value of **mAP50 of 0.881** and a value of **mAP50-95 of 0.567**.
 
 ![](assets/7results.png) ![](assets/8metricsintime.png)
 
@@ -72,16 +73,27 @@ The loss curves were deemed acceptable and it can be seen that, apart for an ini
 
 ![](assets/9trainvalloss.png)
 
-## Model inference
+### Model inference
 
-The inference of the model was performed against the images in the test set. At its completion, a folder **predict** got created, and inside are the images with bounding boxes and values of confidence:
+The inference of the model was performed against the images in the test set. At its completion, a folder **predict** got created, and inside are the images with bounding boxes and values of confidence.
 
 ![](assets/10imgBB.png)
 
 
-# Final considerations
+## Key takeaways
 
+The YOLOv11s based model performed well, thanks to the data augmentation applied and fine tuning of the hyperparameters.
 
+Despite the good results, YOLO is flawed when it comes to detecting very small objects. 
+This problem is due to how:
+  - It divides the image in a grid, that could assign small objects to much bigger cells;
+  - It performs a downsampling during the features extraction, that can lead to losing some critical details.
 
+### Possible future developments
+
+  - Usage of YOLOv11l or YOLOv11x that are much bigger models with better capabilities, although requiring much more ample computing power;
+  - Application of the model to a bigger dataset to improve generalization;
+  - Exploration more optimization and fine tuning techniques;
+  - Usage of the model in real time application, such as scaling it to be used on edge devices mounted on UAVs.
 
 
