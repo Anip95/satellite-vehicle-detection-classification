@@ -28,7 +28,7 @@ It contains three object classes:
 
 Firstly, all the class instances were counted, and by the result of the counting, a decision was made to oversample the classes 0 and 1.
 
-!(assets/1classcount.png)
+![](assets/1classcount.png)
 
 The following image show the number of images that only present the classes 0 and 1.
 !(assets/2numimg0and1.png)
